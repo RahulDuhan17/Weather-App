@@ -1,0 +1,30 @@
+.info-box {
+  text-align: center;
+}
+
+.weather-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-container {
+  display: flex;
+  width: 65%;
+  height: 80vh;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.card {
+  flex: 2;
+}
+
+.card-content {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.73);
+}
+
+.font {
+  color: white;
+}
