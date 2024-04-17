@@ -92,6 +92,7 @@ const InfoBox = ({ info, updateInfo }) => {
               <p className="font">Min Temp = {info.tempMin}&deg;C</p>
               <p className="font">Max Temp = {info.tempMax}&deg;C</p>
               <p className="font">Humidity = {info.humidity}%</p>
+              <p className="font">Wind Speed = {info.speed} km/h</p>
               <p className="font">
                 The weather can be described as <i>{info.weather}</i> and feels
                 like {info.feelsLike}&deg;C

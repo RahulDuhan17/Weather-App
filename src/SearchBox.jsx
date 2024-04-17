@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "@mui/material/Button";
 import "./SearchBox.css";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -23,6 +22,7 @@ const SearchBox = ({ updateInfo }) => {
         tempMin: Math.floor(jsonResponse.main.temp_min),
         tempMax: Math.floor(jsonResponse.main.temp_max),
         humidity: jsonResponse.main.humidity,
+        speed: Math.floor(jsonResponse.wind.speed),
         feelsLike: Math.floor(jsonResponse.main.feels_like),
         weather: jsonResponse.weather[0].description,
       };

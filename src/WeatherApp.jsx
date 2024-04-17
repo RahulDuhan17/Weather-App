@@ -8,6 +8,7 @@ const WeatherApp = () => {
     temp_min: 19,
     temp_max: 27,
     humidity: 22,
+    speed: 12,
     feels_like: 26,
     description: "haze",
   });
