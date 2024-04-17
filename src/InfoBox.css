@@ -11,8 +11,7 @@
 .card-container {
   display: flex;
   width: 65%;
-  height: 80vh;
-  margin: 50px auto;
+  margin: 80px auto;
   justify-content: center;
 }
 

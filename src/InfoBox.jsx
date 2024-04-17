@@ -29,7 +29,7 @@ const InfoBox = ({ info, updateInfo }) => {
   const HOT_URL =
     "https://images.unsplash.com/photo-1605158080227-fd61e78bdc8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1bm55JTIwZGF5fGVufDB8fDB8fHww";
   const COLD_URL =
-    "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D";
+    "https://images.unsplash.com/photo-1447958508993-cb7e66f33cfa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxzbm93ZmFsbHxlbnwwfHwwfHx8MA%3D%3D";
   const RAIN_URL =
     "https://images.unsplash.com/photo-1594760467013-64ac2b80b7d3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D";
 
@@ -50,7 +50,7 @@ const InfoBox = ({ info, updateInfo }) => {
           />
         </Card>
         <div className="card-content">
-            <br />
+          <br />
           <SearchBox updateInfo={updateInfo} />
           <CardContent>
             <Typography
@@ -59,7 +59,10 @@ const InfoBox = ({ info, updateInfo }) => {
               variant="h5"
               component="div"
             >
-              <div>{info.city && info.city.charAt(0).toUpperCase() + info.city.slice(1)}</div>
+              <div>
+                {info.city &&
+                  info.city.charAt(0).toUpperCase() + info.city.slice(1)}
+              </div>
               {info.humidity > 80 ? (
                 <ReactAnimatedWeather
                   icon={rainyDay.icon}

@@ -13,6 +13,8 @@ const WeatherApp = () => {
     description: "haze",
   });
 
+  
+
   const updateInfo = (newInfo) => {
     setWeather(newInfo)
   }

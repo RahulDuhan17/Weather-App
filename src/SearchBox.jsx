@@ -41,6 +41,7 @@ const SearchBox = ({ updateInfo }) => {
     try {
       event.preventDefault();
       setCity("");
+      setError("");
       console.log(city);
       const newInfo = await getWeatherInfo();
       updateInfo(newInfo);
